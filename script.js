@@ -8,7 +8,6 @@ async function getData() {
 
         return data.json();
     }).then((actualData) => {
-        console.log(actualData);
         let tableData = "";
         if(actualData.Countries!==null){
        actualData.Countries.map((values) => {
